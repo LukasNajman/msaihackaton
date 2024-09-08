@@ -1,0 +1,7 @@
+{
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.autoImportCompletions": true,
+    "terminal.integrated.env.linux": {"PYTHONPATH": "${workspaceFolder}"},
+    "terminal.integrated.env.windows": {"PYTHONPATH": "${workspaceFolder}"},
+    "terminal.integrated.env.osx": {"PYTHONPATH": "${workspaceFolder}"}
+}

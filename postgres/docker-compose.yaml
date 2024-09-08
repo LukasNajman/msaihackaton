@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    ports:
+      - 5432:5432
+    volumes:
+      - ./data:/var/lib/postgresql/data
+      - ./1_init_pgvector.sql:/docker-entrypoint-initdb.d/1_init_pgvector.sql
+      - ./2_init_tables.sql:/docker-entrypoint-initdb.d/2_init_tables.sql
+    environment:
+      - POSTGRES_PASSWORD=dev_passwd
+      - POSTGRES_USER=dev_user
+      - POSTGRES_DB=dev_db
+    user: 1000:1000

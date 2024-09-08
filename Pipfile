@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+openai = "*"
+python-dotenv = "*"
+azure-ai-documentintelligence = "*"
+psycopg2-binary = "*"
+pgvector = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
